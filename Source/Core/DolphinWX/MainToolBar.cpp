@@ -187,6 +187,9 @@ void MainToolBar::AddMainToolBarButtons()
 		_("Graphics settings"));
 	AddToolBarButton(IDM_CONFIG_CONTROLLERS, TOOLBAR_CONTROLLER, _("Controllers"),
 		_("Controller settings"));
+
+	AddToolBarButton(IDM_EXPORT_REPLAY, TOOLBAR_SCREENSHOT, _("ScenExprt"), _("Export for training mode"));
+
 }
 
 void MainToolBar::AddDebuggerToolBarButtons()

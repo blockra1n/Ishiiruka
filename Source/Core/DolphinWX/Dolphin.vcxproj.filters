@@ -263,6 +263,9 @@
     <ClCompile Include="Config\SlippiConfigPane.cpp">
       <Filter>GUI\Config</Filter>
     </ClCompile>
+    <ClCompile Include="ReplayScenarioExportDiag.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Main.h" />
@@ -484,6 +487,9 @@
     </ClInclude>
     <ClInclude Include="Config\SlippiConfigPane.h">
       <Filter>GUI\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="ReplayScenarioExportDiag.h">
+      <Filter>GUI</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

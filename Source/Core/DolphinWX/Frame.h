@@ -295,6 +295,7 @@ private:
 	void OnConfigAudio(wxCommandEvent& event);
 	void OnConfigControllers(wxCommandEvent& event);
 	void OnConfigHotkey(wxCommandEvent& event);
+	void OnExportReplay(wxCommandEvent& event);
 
 	void OnToggleFullscreen(wxCommandEvent& event);
 	void OnToggleDualCore(wxCommandEvent& event);

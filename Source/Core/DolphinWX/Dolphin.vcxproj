@@ -180,6 +180,7 @@
     <ClCompile Include="MemcardManager.cpp" />
     <ClCompile Include="NetPlay\PadMapDialog.cpp" />
     <ClCompile Include="PatchAddEdit.cpp" />
+    <ClCompile Include="ReplayScenarioExportDiag.cpp" />
     <ClCompile Include="SoftwareVideoConfigDialog.cpp" />
     <ClCompile Include="TASInputDlg.cpp" />
     <ClCompile Include="VideoConfigDiag.cpp" />
@@ -221,6 +222,7 @@
     <ClInclude Include="NetPlay\NetPlayLauncher.h" />
     <ClInclude Include="NetPlay\NetPlaySetupFrame.h" />
     <ClInclude Include="NetPlay\PadMapDialog.h" />
+    <ClInclude Include="ReplayScenarioExportDiag.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="AboutDolphin.h" />
     <ClInclude Include="Cheats\CheatSearchTab.h" />

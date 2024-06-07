@@ -73,6 +73,7 @@
 #include "DolphinWX/MemcardManager.h"
 #include "DolphinWX/NetPlay/NetPlaySetupFrame.h"
 #include "DolphinWX/NetPlay/NetWindow.h"
+#include "DolphinWX/ReplayScenarioExportDiag.h"
 #include "DolphinWX/TASInputDlg.h"
 #include "DolphinWX/WXInputBase.h"
 #include "DolphinWX/WxEventUtils.h"
@@ -164,6 +165,7 @@ void CFrame::BindMenuBarEvents()
 	Bind(wxEVT_MENU, &CFrame::OnConfigAudio, this, IDM_CONFIG_AUDIO);
 	Bind(wxEVT_MENU, &CFrame::OnConfigControllers, this, IDM_CONFIG_CONTROLLERS);
 	Bind(wxEVT_MENU, &CFrame::OnConfigHotkey, this, IDM_CONFIG_HOTKEYS);
+	Bind(wxEVT_MENU, &CFrame::OnExportReplay, this, IDM_EXPORT_REPLAY);
 
 	// Tools menu
 	Bind(wxEVT_MENU, &CFrame::OnMemcard, this, IDM_MEMCARD);
@@ -1098,6 +1100,11 @@ void CFrame::OnConfigHotkey(wxCommandEvent& WXUNUSED(event))
 
 	// Update the GUI in case menu accelerators were changed
 	UpdateGUI();
+}
+
+void CFrame::OnExportReplay(wxCommandEvent& WXUNUSED(event)) {
+	ReplayScenarioExportDiag exporter(this);
+	exporter.ShowModal();
 }
 
 void CFrame::OnHelp(wxCommandEvent& event)
